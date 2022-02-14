@@ -1,15 +1,12 @@
-%{define} subver beta
-
 Summary:	EFL theme editor
 Name:		eflete
-Version:	1.19.0
+Version:	1.19.1
 Release:	1
 License:	GPLv3+
 Group:		Graphical desktop/Enlightenment
 Url:		http://www.enlightenment.org/
-Source0:	http://download.enlightenment.org/rel/bindings/python/%{name}-%{version}-beta.tar.xz
-BuildRequires:	pkgconfig(eo) >= 1.19.1
-BuildRequires:	pkgconfig(efl) >= 1.19.1
+Source0:	https://download.enlightenment.org/rel/apps/eflete/%{name}-%{version}.tar.xz
+BuildRequires:	pkgconfig(efl)
 
 %description
 Theme editor for enclightenment window manager.
@@ -35,18 +32,18 @@ Theme editor for enclightenment window manager.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 
 %configure  	\
 		--with-eolian-gen=/usr/bin/eolian_gen
 
-%make
+%make_build
 
 
 %install
-%makeinstall_std
+%make_install
 
 
 %find_lang %{name}
