@@ -7,6 +7,7 @@ Group:		Graphical desktop/Enlightenment
 Url:		http://www.enlightenment.org/
 Source0:	https://download.enlightenment.org/rel/apps/eflete/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(efl)
+BuildRequires:	efl
 
 %description
 Theme editor for enclightenment window manager.
