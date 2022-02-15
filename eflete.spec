@@ -36,9 +36,7 @@ Theme editor for enclightenment window manager.
 %autosetup -p1
 
 %build
-NOCONFIGURE=yes ./autogen.sh
-%configure  	\
-		--with-eolian-gen=/usr/bin/eolian_gen
+%configure
 
 %make_build
 
