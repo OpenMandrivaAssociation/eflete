@@ -4,7 +4,7 @@ Version:	1.19.1
 Release:	1
 License:	GPLv3+
 Group:		Graphical desktop/Enlightenment
-Url:		http://www.enlightenment.org/
+Url:		https://www.enlightenment.org/
 Source0:	https://download.enlightenment.org/rel/apps/eflete/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(efl)
 BuildRequires:	efl
